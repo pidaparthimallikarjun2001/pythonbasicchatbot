@@ -12,10 +12,13 @@ According to his / her BMI, the bot tells us what to eat and what exercise to do
 """
 
 def bot():
-    """"This is like the main function which we call first"""""
-    greet_and_introduce()   #Here, the bot introduces itself and asks the user for name
-    name = input("Your name please...") #The bot receives name of the user
-    welcome(name)   #The bot welcomes the user
-    while(1):
-        start()     #we call start() function
+    try:
+        """"This is like the main function which we call first"""""
+        greet_and_introduce()   #Here, the bot introduces itself and asks the user for name
+        name = input("Your name please...") #The bot receives name of the user
+        welcome(name)   #The bot welcomes the user
+        while(1):
+            start()     #we call start() function
+    except Exception as e:
+        print(str(e))
 bot()
