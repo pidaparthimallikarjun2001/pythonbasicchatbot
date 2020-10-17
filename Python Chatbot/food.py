@@ -1,6 +1,7 @@
 from regular_diet import regular_diet
 from gain_weight import gain_weight
 from lose_weight import lose_weight
+from findBMI import findBMI
 
 """
 This function asks the user his weight and height and it calculates his/her BMI(Body Mass Index). According to that BMI, 
@@ -11,7 +12,7 @@ def food():
 	print("please Enter your weight(in kgs) and height(in cm)")
 	weight=int(input("Weight:"))
 	height=int(input("height:"))
-	bmi=round((weight*100*100)/(height*height),2)	#calculating BMI
+	bmi=findBMI(height, weight)	#calculating BMI
 	print("Your Body Mass Index(BMI) is",bmi,"\n")
 	if(bmi>=18.5 and bmi<=24.9):				#Ideal BMI lies between 18.5 and 24.9
 		print("there is no need to lose or gain weight as your BMI is",bmi,"do follow your regular diet\n")

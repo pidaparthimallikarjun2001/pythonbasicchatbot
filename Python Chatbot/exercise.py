@@ -1,6 +1,7 @@
 import webbrowser
 import math
 from regular_diet import regular_diet
+from findBMI import findBMI
 
 """
 This function asks the user his weight and height and it calculates his/her BMI(Body Mass Index). According to that BMI, 
@@ -16,7 +17,7 @@ def exercise():
 		print("please Enter your weight(in kgs) and height(in cm)\n")
 		weight=int(input("Weight:"))
 		height=int(input("height:"))
-		bmi=round((weight*100*100)/(height*height),2)		#calculating BMI
+		bmi=findBMI(height, weight)		#calculating BMI
 		print("Your Body Mass Index(BMI) is",bmi,"\n")
 		if(bmi>=18.5 and bmi<=24.9):						#Ideal BMI lies between 18.5 and 24.9
 			print("there is no need of loosing weight as your BMI is",bmi,"do regular exercise\n")
@@ -25,7 +26,7 @@ def exercise():
 			print("your BMI is",bmi," it would be better to gain weight by eating good protein food and do some push ups\n")
 		else:												#BMI > 24.9
 			less=bmi-24
-			print("To loose your wait you should diet for",math.ceil(less),"weeks\n")
+			print("To loose your weight you should diet for",math.ceil(less),"weeks\n")
 			week=int(input("day of workout:"))//7
 			if(week==0):
 				print("do basic Exercises like fetching and walking for 45 mins-1 hour a day at evening for morning in open place\n")
