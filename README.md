@@ -15,7 +15,7 @@ it asks for 2 things: 1. Exercise and 2. Diet plan
 In both these cases, it asks the user to enter his weight(in kgs) and height(in cms) and it calculates his/her BMI(Body Mass Index)
 According to his / her BMI, the bot tells us what to eat and what exercise to do in order to be healthy both physically and mentally. 
 # YOUTUBE LINK
-use this link: https://www.youtube.com/watch?v=UwuX0UbcfUo&feature=youtu.be
+USE THIS LINK: https://www.youtube.com/watch?v=UwuX0UbcfUo&feature=youtu.be
 # BLOCK DIAGRAM TO UNDERSTAND FLOW AND CONNECTION BETWEEN FUNCTIONS
 <img src = "Python%20Chatbot/IMG20201017134248.jpg">
 
